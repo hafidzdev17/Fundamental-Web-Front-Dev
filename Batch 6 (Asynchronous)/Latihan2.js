@@ -6,12 +6,19 @@ const getCoffee = (ambilkan) => {
     setTimeout(() => {
         coffee = "Kopi Selesai!";
         ambilkan(coffee);
-    },3000)
+    }, 3000)
 }
 
 getCoffee(coffee => {
     console.log(coffee);
-    
+
 });
 
 // Callback Hell
+function makeACake (...rawIngredients) {
+    gatheringIngredients(rawIngredients)
+        .then(makeTheDough)
+        .then(pourDough)
+        .then(bakeACake)
+        .then(console.log);
+}
