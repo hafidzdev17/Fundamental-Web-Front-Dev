@@ -1,22 +1,22 @@
-function makeCoffe(isHot) {
-    var coffee;
-    if (isHot) {
-       coffee = "Make an Hot Coffee"
-    } else {
-       coffee = "Make a Ice Coffee"
-    }
+function buatKopi (panas) {
+   var kopi;
+   if (panas) {
+      kopi = "Buatkan Kopi Panas"
+   } else {
+      kopi = "Buatkan Kopi Dingin"
+   }
 
-    return coffee;
+   return kopi;
 
 }
 
-console.log(makeCoffe(true));
+console.log(buatKopi(true));
 
 // Hoisting before declarate variable
 
-function getFood() {
-    food = "Chocolate";
-    console.log(food);
+function getFood () {
+   food = "Chocolate";
+   console.log(food);
    var food;
 }
 

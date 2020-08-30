@@ -1,26 +1,20 @@
-// let
-let name = "John";
-name = "Doe";
- 
- 
-console.log(name);
-
-// const
-const names = "John";
-// names = "Doe";
- 
-console.log(names);
 
 // catatan : 
 // Gunakan let ketika variabel yang kita buat akan diinisialisasikan kembali nilainya. 
 // Gunakan const ketika variabel yang kita buat tidak ingin diinisialisasikan kembali nilainya.
- 
+
 // const menggunakan array dan object
 
-const fruits = ["apple", "orange"];
-fruits.push("banana");
-console.log(fruits);
+const nama = ['hafid', 'deddy', 'hasyim', 'doni'];
+nama.push('nauval');
+console.log(nama);
 
-const people = { name: "John", age: 18 }
-people.regency = "Bandung"
-console.log(people);
+const ngoding = {
+    backend: {
+        php: ['Laravel, CodeIgniter, Symfony'],
+        js: [' Express, Adonis, Hapijs']
+    },
+    frontend: 'vuejs, reactjs, svelte, angular'
+}
+ngoding.fullstack = "MERN ,MEAN, MEVN, PERN";
+console.table(ngoding.backend);
